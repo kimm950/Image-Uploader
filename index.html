@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Image Uploader</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <img class='image' />
+
+  <form class='form'>
+    <div>
+      <label for="imageUploadInput" class="button choose-image-button">
+        Import image
+        <input type="file" id="imageUploadInput">
+      </label>
+      <button type='submit' class="button upload-button">
+        Upload ⬆
+      </button>
+    </div>
+    <p class="image-file-name">Image name</p>
+  </form>
+
+  <div class="loading-wrapper">
+    <div class="loading-bar-bg"></div>
+    <div class="loading-bar"></div>
+    <p class="loading-number">20%</p>
+  </div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js" async defer></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
